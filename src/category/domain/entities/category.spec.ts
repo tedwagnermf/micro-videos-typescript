@@ -2,9 +2,8 @@ import { CategoryProperties } from "./category";
 import Category from "./category";
 import { omit } from "lodash";
 //import UniqueEntityId from "#seedwork/domain/value-objects/unique-entity-id.vo";
-import UniqueEntityId from "@seedwork/domain/value-objects/unique-entity-id.vo";
-
-//import UniqueEntityId from "@/domain/value-objects/unique-entity-id.vo";
+//import UniqueEntityId from "@seedwork/domain/value-objects/unique-entity-id.vo";
+import UniqueEntityId from "../../../@seedwork/domain/value-objects/unique-entity-id.vo";
 
 describe("Category unit tests", () => {
   beforeEach(() => {

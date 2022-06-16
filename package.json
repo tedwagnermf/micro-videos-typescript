@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@jest/expect": "^28.1.1",
+    "@jest/transform": "^28.1.1",
     "class-validator": "^0.13.2",
     "lodash": "^4.17.21",
     "uuid": "^8.3.2"
