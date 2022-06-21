@@ -4,7 +4,7 @@ import { FieldsErrors } from "../validators/validator-fields-interface";
 import  {objectContaining} from "expect";
 import { EntityValidationError } from "../errors/validation-error";
 
-type Expected = { validator: ClassValidatorFields<any>; data: any | (() => any) };
+type Expected = { validator: ClassValidatorFields<any>; data: any }  | (() => any);
 
 expect.extend({
   containsErrorMessages(expected: Expected, received: FieldsErrors) {
@@ -30,7 +30,7 @@ expect.extend({
 });
 
 function isValid() {
-  return { pass: true, message: "" };
+  return { pass: true, message: () =>"" };
 }
 
 function assertContainsErrorMessages(expected: FieldsErrors, received: FieldsErrors) {

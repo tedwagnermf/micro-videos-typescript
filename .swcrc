@@ -7,7 +7,7 @@
     "baseUrl": "./src",
     "paths": {
       "@seedwork/*": [
-        "@seedwork/*"
+        "./@seedwork/*"
       ]
     }
   }
